@@ -3,4 +3,5 @@
         - name: create a folder
           file: path=/home/ubuntu/test/ state=directory
         - name: copy the jar file
+          become: yes
           copy: src=java-web-project.war dest=/var/lib/tomcat8/webapps/

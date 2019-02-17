@@ -3,5 +3,5 @@
          - name: install java
            apt: name=openjdk-7-jdk 
          - name: tomcat
-           apt: name=tomcat7
+           apt: name=tomcat8
            

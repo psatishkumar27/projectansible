@@ -1,0 +1,7 @@
+- hosts: devserver
+  tasks: 
+         - name: install java
+           apt: name=openjdk-default 
+         - name: tomcat
+           apt: name=tomcat state=latest
+           

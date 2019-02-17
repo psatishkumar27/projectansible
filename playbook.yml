@@ -1,0 +1,6 @@
+- hosts: devserver
+  tasks: 
+        - name: create a folder
+          file: path=/home/ubuntu/test/ state=directory
+        - name: copy the jar file
+          copy: src=java-web-project.war dest=/home/ubuntu/test/ remote_src=yes
